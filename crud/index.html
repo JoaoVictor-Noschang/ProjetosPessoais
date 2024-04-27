@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Crud</title>
+    <script src="script/app.js" ></script>
+</head>
+<body>
+    <header>
+        <img src="assets/market.svg" alt="Market">
+        <h1>Controle de vencimento de Lotes</h1>
+    </header>
+    <main>
+        <form>
+            <label for="codigo">Código
+                <input id="codigo" type="number" readonly>
+            </label>
+            <label for="produto">Produto
+                <input id="produto" type="text">
+            </label>
+            <label for="fornecedor">Fornecedor
+                <input id="fornecedor" type="text">
+            </label>
+            <label for="lote">Lote
+                <input id="lote" type="text">
+            </label>
+            <label for="quantidade">Quantidade 
+                <input id="quantidade" type="number">
+            </label>
+            <label for="vencimento">Vencimento
+                <input id="vencimento" type="date">
+            </label>
+            <button id="btn_cadastrar" onclick="cadastrarLote(event)">CADASTRAR</button>
+        </form>
+
+        <section id="resultados">
+            
+        </section>
+
+    </main>
+
+    <script>
+        exibirDados();
+    </script>
+</body>
+</html>

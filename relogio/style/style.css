@@ -1,0 +1,83 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root {
+    --font: 'Space Mono', Verdana, Sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font);
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(29, 29, 29);
+}
+
+main {
+    padding: 40px ;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.7);
+    background-color: rgb(32, 32, 32);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+main section {
+    width: 150px;
+    height: 150px;
+    box-shadow: 0 0 10px;
+    border-radius: 100px;
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#hr {
+    color: rgb(255, 102, 0);
+}
+
+#mn {
+    color: rgb(0, 255, 85);
+}
+
+#sc {
+    color: yellow;
+    position: relative;
+}
+
+section p {
+    font-size: 3.5em;
+    font-weight: bold;
+}
+
+section legend {
+    font-size: 1.1em;
+}
+
+#madeIn {
+    margin-top: 15px;
+    color: white;
+}
+
+#madeIn a {
+    text-decoration: none;
+    color: rgb(103, 255, 197);
+    font: 500 1.1em;
+}
+
+
+
+
+

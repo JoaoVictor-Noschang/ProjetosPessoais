@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="../../assets/favicons/conversor.ico" type="image/x-icon">
+    <title>Conversor</title>
+</head>
+<body>
+    <header>
+        <h1>Bem vindo ao <span>Conversor!</span></h1>
+        <p>Site dedicado a conversão de materiais de Tonelada para Metros Cúbicos (m³)</p>
+    </header>
+    <main>
+        
+        
+        <section class="produtos">
+            <h2>Primeiro selecione o material:</h2>
+
+            <div onclick="clear()">
+                <input type="radio" name="material" id="areia" value="areia" checked>
+                <label for="areia">Areia Fina/Grossa</label>
+            </div>
+        
+            <div onclick="clear()">
+                <input type="radio" name="material" id="brita" value="brita">
+                <label for="brita">Brita/Pedra 1</label>
+            </div>
+        
+            <div onclick="clear()">
+                <input type="radio" name="material" id="pedrisco" value="pedrisco">
+                <label for="pedrisco">Pedrisco/Pedra 0</label>
+            </div>
+
+        </section>
+
+        <section class="final">
+            <h2>Em seguida informe e quantidade em <span>TONELADAS:</span></h2>
+            <input type="number" name="tonelada" id="tonelada" min="1">
+            <button onclick="converterMaterial()">CONVERTER</button>
+        </section>
+
+        <section id="res">
+            Aguardando Resultado...
+        </section>
+
+    </main>
+    <footer>
+        <p>Desenvolvido por <span><a href="https://github.com/JoaoVictor-Noschang" target="_blank">João Victor</a></span></p>
+    </footer>
+
+
+    <script src="conver.js"></script>
+</body>
+</html>
