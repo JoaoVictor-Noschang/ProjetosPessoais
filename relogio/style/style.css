@@ -14,7 +14,6 @@
 }
 
 body {
-    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -24,9 +23,10 @@ body {
 
 main {
     padding: 40px ;
-    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.7);
-    background-color: rgb(32, 32, 32);
-    border-radius: 5px;
+    margin-top: 165px;
+    background-color: rgb(30, 30, 30);
+    box-shadow: 0px 0px 25px rgb(157, 32, 235);
+    border-radius: 25px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -67,7 +67,7 @@ section legend {
 }
 
 #madeIn {
-    margin-top: 15px;
+    margin: 25px;
     color: white;
 }
 
@@ -77,6 +77,14 @@ section legend {
     font: 500 1.1em;
 }
 
+
+@media (max-width: 710px) {
+    main {
+        flex-direction: column;
+        margin-top: 15px;
+        
+    }
+}
 
 
 
