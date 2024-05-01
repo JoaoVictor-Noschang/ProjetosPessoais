@@ -12,6 +12,9 @@ class Produto {
     }
 }
 
+let p1 = new Produto('Cerveja Local', 'Ambev', '31225-00015', '200', '2024-12-31');
+produtos.push(p1);
+
 function cadastrarLote(event) {
     event.preventDefault();
 
@@ -49,7 +52,7 @@ function exibirDados() {
     for(let i in produtos) {
 
         row += `<tr><td><img onclick='excluir(${produtos[i].id})' src='assets/delete.svg' alt='Edit'></td>` +
-                    `<td><img src='assets/edit.svg' alt='Edit' ></td>` +
+                    `<td><img onclick='atualizar(${produtos[i].id})' src='assets/edit.svg' alt='Edit' ></td>` +
                     `<td>${produtos[i].id}</td>` +
                     `<td>${produtos[i].produto}</td>` +
                     `<td>${produtos[i].fornecedor}</td>` +
@@ -84,7 +87,18 @@ function excluir(produtoId) {
 }
 
 function atualizar(produtoId){
+    for (let i in produtos) {
+        if (produtos[i].id == produtoId) {
+            document.getElementById('codigo').value = produtoId;
+            document.getElementById('produto').value = produtos[i].produto;
+            document.getElementById('fornecedor').value = produtos[i].fornecedor;
+            document.getElementById('lote').value = produtos[i].lote;
+            document.getElementById('quantidade').value = produtos[i].quantidade;
+            document.getElementById('vencimento').value = produtos[i].vencimento;
+        }
+      }
     
+      exibirDados();
 }
 
 
