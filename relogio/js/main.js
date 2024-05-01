@@ -16,9 +16,11 @@ setInterval( () => {
 }, 1000);
 
 function colorBackground(hours){
+    let linkstyle = document.getElementById("linkstyle");
+
     if (hours < 18) {
-        document.body.style.backgroundColor = "#d1c68a";
+        linkstyle.setAttribute("href", "style/light.css");
     } else {
-        document.body.style.backgroundColor = "#1d1d1d";
+        linkstyle.setAttribute("href", "style/dark.css");
     }
 }
