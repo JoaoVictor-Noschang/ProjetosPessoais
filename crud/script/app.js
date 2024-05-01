@@ -12,7 +12,7 @@ class Produto {
     }
 }
 
-let p1 = new Produto('Cerveja Local', 'Ambev', '31225-00015', '200', '2024-12-31');
+let p1 = new Produto('Cerveja Local', 'Ambev', '31225-00015', '200', '31 - 12 - 2024');
 produtos.push(p1);
 
 function cadastrarLote(event) {
@@ -22,7 +22,9 @@ function cadastrarLote(event) {
     let newFornecedor = document.getElementById('fornecedor').value;
     let newLote = document.getElementById('lote').value;
     let newQuantidade = document.getElementById('quantidade').value;
-    let newVencimento = document.getElementById('vencimento').value;
+
+    let datavencimento = new Date(document.getElementById('vencimento').value);
+    let newVencimento = `${datavencimento.getDate()} - ${datavencimento.getMonth() + 1} - ${datavencimento.getFullYear()}`;
 
     if(newProduto != '' && newFornecedor != '' && newLote != '' && newQuantidade != '' && newVencimento != ''){
         const produtoAtual = new Produto(newProduto, newFornecedor, newLote, newQuantidade, newVencimento);
