@@ -20,11 +20,13 @@
 body {
     font-family: var(--font01);
     background-color: var(--cor03);
-    border: 1px solid white;
 }
 
 header {
+    width: 700px;
+    margin: 10px auto 15px auto;
     padding: 20px;
+    border-bottom: 1px solid;
     text-align: center;
     color: var(--cor01);
     display: flex;
