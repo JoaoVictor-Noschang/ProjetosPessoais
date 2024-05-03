@@ -73,6 +73,7 @@ main button {
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     display: block;
+    cursor: pointer;
 }
 
 footer {
