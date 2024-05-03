@@ -1,47 +1,13 @@
 @charset "UTF-8";
 
-@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-
-:root {
-    --font: 'Space Mono', Verdana, Sans-serif;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: var(--font);
-}
 
 body {
     background-color: rgb(20, 20, 25);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
 main {
-    padding: 40px ;
-    margin-top: 165px;
     background-color: rgb(30, 30, 30);
     box-shadow: 0px 0px 25px rgb(157, 32, 235);
-    border-radius: 25px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-main section {
-    width: 150px;
-    height: 150px;
-    box-shadow: 0 0 10px;
-    border-radius: 100px;
-    margin: 15px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
 }
 
 #hr {
@@ -54,38 +20,16 @@ main section {
 
 #sc {
     color: yellow;
-    position: relative;
-}
-
-section p {
-    font-size: 3.5em;
-    font-weight: bold;
-}
-
-section legend {
-    font-size: 1.1em;
 }
 
 #madeIn {
-    margin: 25px;
     color: white;
 }
 
 #madeIn a {
-    text-decoration: none;
     color: rgb(33, 159, 190);
-    font-weight: bolder;
-    font-size: 1.1em;
 }
 
-
-@media (max-width: 710px) {
-    main {
-        flex-direction: column;
-        margin-top: 15px;
-        
-    }
-}
 
 
 

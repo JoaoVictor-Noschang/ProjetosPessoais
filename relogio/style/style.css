@@ -1,0 +1,74 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root {
+    --font: 'Space Mono', Verdana, Sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font);
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    padding: 40px ;
+    margin-top: 165px;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+main section {
+    width: 200px;
+    height: 200px;
+    box-shadow: 0 0 10px;
+    border-radius: 100px;
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+section p {
+    font-size: 3.6em;
+    font-weight: bold;
+}
+
+section legend {
+    font-size: 1.3em;
+}
+
+#madeIn {
+    margin: 50px;
+}
+
+#madeIn a {
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 1.2em;
+}
+
+
+@media (max-width: 710px) {
+    main {
+        flex-direction: column;
+        margin-top: 15px;
+        
+    }
+}
+
+
+
+
