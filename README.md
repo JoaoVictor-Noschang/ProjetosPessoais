@@ -30,7 +30,7 @@ Relório digital feito utilizando JavaScript, HTML5 e CSS3. Com o intuito de tre
 
 
 ## Controle de Lotes de Produtos 📟 
-<a style="color:#7AE7C7" href="crud/index.html">Visualize e teste aqui!</a>
+<a style="color:#7AE7C7" href="https://joaovictor-noschang.github.io/ProjetosPessoais/crud/index.html">Visualize e teste aqui!</a>
 
 - Status: <strong style="color:#D64045">Em desenvolvimento!</strong>
 
