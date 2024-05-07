@@ -1,5 +1,5 @@
-const produtos = [];
-let cod = 0;
+const produtos = JSON.parse(localStorage.getItem('produtos')) || [];
+let cod = produtos.length > 0 ? produtos[produtos.length - 1].id : 0;
 
 class Produto {
     constructor(produto, fornecedor, lote, quantidade, vencimento) {
@@ -29,6 +29,7 @@ function cadastrarLote(event) {
     if(newProduto != '' && newFornecedor != '' && newLote != '' && newQuantidade != '' && newVencimento != ''){
         const produtoAtual = new Produto(newProduto, newFornecedor, newLote, newQuantidade, newVencimento);
         produtos.push(produtoAtual);
+        localStorage.setItem('produtos', JSON.stringify(produtos));
         alert('Registro salvo!');
         exibirDados();
         clear();
@@ -81,6 +82,7 @@ function excluir(produtoId) {
   for (let i in produtos) {
     if (produtos[i].id == produtoId) {
       produtos.splice(i, 1);
+      localStorage.setItem('produtos', JSON.stringify(produtos));
       alert('Registro deletado');
     }
   }

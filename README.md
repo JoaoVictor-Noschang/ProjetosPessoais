@@ -33,6 +33,7 @@ Relório digital feito utilizando JavaScript, HTML5 e CSS3. Com o intuito de tre
 <a style="color:#7AE7C7" href="https://joaovictor-noschang.github.io/ProjetosPessoais/crud/index.html" target="_blanck">Visualize e teste aqui!</a>
 
 - Status: <strong style="color:#D64045">Em desenvolvimento!</strong>
+- Em 06/05 adicionado o armazenamento no local storege do navegador, método temporárrio, pois futuramente será subistituido pelo uso de Banco de Dados.
 
 Desenvolvido utilizando JavaScript com a programação orientada a objetos, HTML5 e CSS3.
 
