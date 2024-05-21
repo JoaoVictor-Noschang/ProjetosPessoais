@@ -38,3 +38,11 @@ Relório digital feito utilizando JavaScript, HTML5 e CSS3. Com o intuito de tre
 Desenvolvido utilizando JavaScript com a programação orientada a objetos, HTML5 e CSS3.
 
 Uma ferramenta que possibilita incluir, deletar e alterar (CRUD) de lotes de produtos, e fornece a possibilidade de retirada de relatório para o controle de vencimento dos produtos, pode ser aplicado em diversas áreas, como de produtos alimentícios, quimícos ou até mesmo farmaceuticos. Mas o intuito principal é ser utilizada no ramo alimentício.
+
+<br>
+
+
+## Jokenpô ✊ ✋ ✌️
+<a style="color:#7AE7C7" href="https://joaovictor-noschang.github.io/ProjetosPessoais/jokenpo/" target="_blanck">Visualize e teste aqui!</a>
+
+Jogo de pedra, papel e tesoura desenvolvido para treinar minhas habilidades utilizando array de objetos, manipulação de eventos e elementos DOM, e a utilização de alguns métodos matemáticoss para gerar comportamentos aleatórios.
