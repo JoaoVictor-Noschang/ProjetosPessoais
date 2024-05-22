@@ -21,7 +21,7 @@ Quiz sobre algoritmos e lógica de programação, feito utilizando JavaScript, H
 <br>
 
 
-## Relógio em tempo real 🕐
+## Relógio em tempo real ⌚
 <a style="color:#6622CC" href="https://joaovictor-noschang.github.io/ProjetosPessoais/relogio/index.html" target="_blanck">Visualize e teste aqui!</a>
 
 Relório digital feito utilizando JavaScript, HTML5 e CSS3. Com o intuito de treinar minhas habilidades com funções de data e hora disponíveis no JavaScript. Além disso o estilo do relógio é alterando dependendo do horário de sua exibição, com atualmente duas possíbilidades, Dia e Noite.
@@ -46,3 +46,11 @@ Uma ferramenta que possibilita incluir, deletar e alterar (CRUD) de lotes de pro
 <a style="color:#6622CC" href="https://joaovictor-noschang.github.io/ProjetosPessoais/jokenpo/" target="_blanck">Visualize e teste aqui!</a>
 
 Jogo de pedra, papel e tesoura desenvolvido para treinar minhas habilidades utilizando array de objetos, manipulação de eventos e elementos DOM, e a utilização de alguns métodos matemáticoss para gerar comportamentos aleatórios.
+
+<br>
+
+
+## Donloader de PDF 💾
+<a style="color:#6622CC" href="" target="_blanck">Visualize e teste aqui!</a>
+
+É possível fazer um Dowload do conteúdo apresenrtado na página HTML, em formato PDF, isso graças a utilização de uma API adequada.
