@@ -54,3 +54,12 @@ Jogo de pedra, papel e tesoura desenvolvido para treinar minhas habilidades util
 <a style="color:#6622CC" href="https://joaovictor-noschang.github.io/ProjetosPessoais/downloader_pdf_/" target="_blanck">Visualize e teste aqui!</a>
 
 É possível fazer um Dowload do conteúdo apresenrtado na página HTML, em formato PDF, isso graças a utilização de uma API adequada.
+
+<br>
+
+
+## Quadro Kanban 🍃
+<a style="color:#6622CC" href="https://joaovictor-noschang.github.io/ProjetosPessoais/kanban/" target="_blanck">Visualize e teste aqui!</a>
+
+Desenvolvido com a finalidade de trainar os conhecimentos em eventos e aprender mais sobre a manipulação do DOM.
+Neste projeto é possível arrastar os itens entre as colunas e assim coloca-los em uma nova posição.
