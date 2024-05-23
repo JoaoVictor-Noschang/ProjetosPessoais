@@ -14,7 +14,7 @@ columns.forEach((item) => {
         const applyAfter = getNewPosition(item, e.clientY);
 
         if(applyAfter) {
-            applyAfter.insertAdjacentElement("aftered", dragging);
+            applyAfter.insertAdjacentElement("afterEnd", dragging);
         } else {
             item.prepend(dragging);
         }
