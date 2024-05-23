@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(253, 253, 194);
+}
+
+main {
+    margin: auto;
+    max-width: 700px;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 30px 10px;
+}
+
+section {
+    border-radius: 4px;
+    height: 60vh;
+    border: 1px solid;
+    width: 30%;
+    padding: 20px 15px;
+    background-color: rgb(156, 215, 255);
+}
+
+div:first-of-type {
+    margin-top: 0;
+}
+
+div {
+    text-align: center;
+    border: 1px solid;
+    border-radius: 4px;
+    margin: 15px 0;
+    padding: 5px;
+    background-color: rgb(245, 245, 245);
+}
