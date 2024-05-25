@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar Lote</title>
+    <link rel="stylesheet" href="styles/cadastro.css">
+</head>
+<body>
+    <header>
+        <h1>Cadastrar novo lote</h1>
+    </header>
+    <main>
+        <form>
+            <label for="codigo">Código
+                <input type="number" id="codigo" readonly>
+            </label>
+            <label for="produto">Produto
+                <input type="text" id="produto">
+            </label>
+            <label for="fornecedor">Fornecedor
+                <input type="text" id="fornecedor">
+            </label>
+            <label for="lote">Lote
+                <input type="text" id="lote">
+            </label>
+            <label for="quantidade">Quantidade
+                <input type="text" id="quantidade">
+            </label>
+            <label for="vencimento">Vencimento
+                <input type="date" id="vencimento">
+            </label>
+            <button id="submit-button">CADASTRAR</button>
+        </form>
+    </main>
+
+    <script type="module" src="./scripts/Produto.js"></script>
+    <script type="module" src="./scripts/cadastrar.js"></script>
+</body>
+</html>

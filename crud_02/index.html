@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle de Lotes</title>
+    <link rel="stylesheet" href="styles/index.css">
+</head>
+<body>
+    <header>
+        <h1>Sistema de registros de Lotes</h1>
+    </header>
+    <main>
+        <p>Ações disponíveis:</p>
+        <div>
+            <button id="cadastro">Cadastrar novo lote</button>
+            <button id="relatorio">Relatório de lotes</button>
+        </div>
+    </main>
+
+    <script>
+        const cadastrosButton = document.querySelector("#cadastro");
+        cadastrosButton.addEventListener('click', () => {
+            window.location.assign("cadastro.html");
+        })
+
+        const tabelasButton = document.querySelector("#relatorio");
+        tabelasButton.addEventListener('click', () => {
+            window.location.assign("relatorio.html");
+        })
+    </script>
+</body>
+</html>

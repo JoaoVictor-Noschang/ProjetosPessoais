@@ -1,0 +1,67 @@
+
+:root {
+    --cor01: #e4e4e4;
+    --cor02: #5f5f5f;
+    --cor03: #2c2c2c;
+    
+    --font01: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--font01);
+}
+
+body {
+    background: var(--cor03);
+}
+
+header {
+    padding: 2rem;
+    text-align: center;
+    border-bottom: 1px solid;
+    margin-bottom: 3rem;
+    background: var(--cor01);
+}
+
+main {
+    background: var(--cor02);
+    width: 300px;
+    margin: 5rem auto;
+    padding: 1rem;
+    border: 1px solid #e6e6e6;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+main > p {
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+main > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.875rem;
+}
+
+main div button {
+    width: 10rem;
+    padding: 0.5rem;
+    font-weight: bold;
+    background-color: rgb(255, 187, 86);
+    border: none;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+
+    transition: background 0.1s, color 0.1s, box-shadow 0.2s;
+}
+
+main div button:hover {
+    background: #a6fdd2;
+    cursor: pointer;
+    box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.5);
+}
