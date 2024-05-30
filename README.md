@@ -37,6 +37,7 @@ Próximos passos:
     <li>Incluir a retirada de relatório de cadastros.</li>
     <li>implementar um anco de dados para armazenar os registros.</li>
 </ul>
+
 </br> 
 
 Desenvolvido utilizando JavaScript com a programação orientada a objetos, HTML5 e CSS3.
