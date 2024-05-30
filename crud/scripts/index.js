@@ -10,6 +10,7 @@ const vencimentoInput = document.querySelector("#vencimento");
 
 const actionButton = document.querySelector("#submit-button");
 
+
 function Lote(produto, fornecedor, lote, quantidade, vencimento) {
     this.id = ++cod;
     this.produto = produto;
@@ -22,39 +23,9 @@ function Lote(produto, fornecedor, lote, quantidade, vencimento) {
 let lote01 = new Lote('Cerveja Local', 'Ambev', '31225-00015', '200', '31-12-2024');
 cadastros.push(lote01);
 
+
 exibirDados();
 verificarAcao();
-
-
-function exibirDados() {
-    let row = '<table><thead><tr>' +
-        '<th>Excluir</th>' +
-        '<th>Editar</th>' +
-        '<th>Código</th>' +
-        '<th>Produto</th>' +
-        '<th>Fornecedor</th>' +
-        '<th>Lote</th>' +
-        '<th>Quantidade</th>' +
-        '<th>Vencimento</th>'+
-        '</tr></thead><tbody>';
-
-    for (let i in cadastros) {
-
-        row += `<tr><td><img onclick='excluirCadastro(${cadastros[i].id})' src='assets/delete.svg' alt='Edit'></td>` +
-            `<td><img onclick='getDadosInInput(${cadastros[i].id})' src='assets/edit.svg' alt='Edit' ></td>` +
-            `<td>${cadastros[i].id}</td>` +
-            `<td>${cadastros[i].produto}</td>` +
-            `<td>${cadastros[i].fornecedor}</td>` +
-            `<td>${cadastros[i].lote}</td>` +
-            `<td>${cadastros[i].quantidade}</td>` +
-            `<td>${cadastros[i].vencimento}</td></tr>`;
-
-    }
-
-    row += '</tbody></table>';
-
-    document.getElementById('resultados').innerHTML = row;
-}
 
 
 function verificarAcao() {
@@ -78,27 +49,8 @@ function verificarAcao() {
                 alert("Todos os dados devem ser informados!");
             }
         }
+        verificarAcao();
     }, { once: true });
-}
-
-function clear() {
-    codigoInput.value = '';
-    produtoInput.value = '';
-    fornecedorInput.value = '';
-    loteInput.value = '';
-    quantidadeInput.value = '';
-    vencimentoInput.value = '';
-}
-
-function excluirCadastro(produtoId) {
-    for (let i in cadastros) {
-        if (cadastros[i].id == produtoId) {
-            cadastros.splice(i, 1);
-            alert('Registro deletado');
-        }
-    }
-    exibirDados();
-    clear();
 }
 
 function cadastrarLote() {
@@ -146,4 +98,54 @@ function atualizarLote() {
     } else {
         alert("Lote não encontrado!");
     }
+}
+
+function excluirCadastro(produtoId) {
+    for (let i in cadastros) {
+        if (cadastros[i].id == produtoId) {
+            cadastros.splice(i, 1);
+            alert('Registro deletado');
+        }
+    }
+    exibirDados();
+    clear();
+}
+
+function exibirDados() {
+    let row = '<table><thead><tr>' +
+        '<th>Excluir</th>' +
+        '<th>Editar</th>' +
+        '<th>Código</th>' +
+        '<th>Produto</th>' +
+        '<th>Fornecedor</th>' +
+        '<th>Lote</th>' +
+        '<th>Quantidade</th>' +
+        '<th>Vencimento</th>'+
+        '</tr></thead><tbody>';
+
+    for (let i in cadastros) {
+
+        row += `<tr><td><img onclick='excluirCadastro(${cadastros[i].id})' src='assets/delete.svg' alt='Edit'></td>` +
+            `<td><img onclick='getDadosInInput(${cadastros[i].id})' src='assets/edit.svg' alt='Edit' ></td>` +
+            `<td>${cadastros[i].id}</td>` +
+            `<td>${cadastros[i].produto}</td>` +
+            `<td>${cadastros[i].fornecedor}</td>` +
+            `<td>${cadastros[i].lote}</td>` +
+            `<td>${cadastros[i].quantidade}</td>` +
+            `<td>${cadastros[i].vencimento}</td></tr>`;
+
+    }
+
+    row += '</tbody></table>';
+
+    document.getElementById('resultados').innerHTML = row;
+}
+
+function clear() {
+    codigoInput.value = '';
+    produtoInput.value = '';
+    fornecedorInput.value = '';
+    loteInput.value = '';
+    quantidadeInput.value = '';
+    vencimentoInput.value = '';
 }

@@ -3,49 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/style.css">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <title>Crud</title>
-    <script src="script/app.js" ></script>
+    <title>Cadastrar Lote</title>
+    <link rel="stylesheet" href="styles/index.css">
 </head>
 <body>
     <header>
-        <img src="assets/market.svg" alt="Market">
-        <h1>Controle de vencimento de Lotes</h1>
+        <h1>Cadastrar novo lote</h1>
     </header>
     <main>
         <form>
             <label for="codigo">Código
-                <input id="codigo" type="number" readonly>
+                <input type="number" id="codigo" readonly>
             </label>
             <label for="produto">Produto
-                <input id="produto" type="text">
+                <input type="text" id="produto">
             </label>
             <label for="fornecedor">Fornecedor
-                <input id="fornecedor" type="text">
+                <input type="text" id="fornecedor">
             </label>
             <label for="lote">Lote
-                <input id="lote" type="text">
+                <input type="text" id="lote">
             </label>
-            <label for="quantidade">Quantidade 
-                <input id="quantidade" type="number">
+            <label for="quantidade">Quantidade
+                <input type="text" id="quantidade">
             </label>
             <label for="vencimento">Vencimento
-                <input id="vencimentoInput" type="date">
+                <input type="date" id="vencimento">
             </label>
-            <button id="btn_cadastrar" onclick="cadastrarLote(event)">CADASTRAR</button>
+            <button id="submit-button">...</button>
         </form>
-
-        <section id="resultados">
-            
-        </section>
-
     </main>
 
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            exibirDados();
-        });
-    </script>
+    <section id="resultados"></section>
+
+    <script src="scripts/index.js"></script>
+
 </body>
 </html>
