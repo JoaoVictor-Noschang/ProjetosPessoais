@@ -35,7 +35,7 @@ Relório digital feito utilizando JavaScript, HTML5 e CSS3. Com o intuito de tre
 Próximos passos: 
 <ul>
     <li>Incluir a retirada de relatório de cadastros.</li>
-    <li>implementar um anco de dados para armazenar os registros.</li>
+    <li>Implementar um banco de dados para armazenar os registros.</li>
 </ul>
 
 
