@@ -82,6 +82,7 @@ function getDadosInInput(loteId) {
             break;
         }
     }
+    verificarAcao();
 }
 
 function atualizarLote() {
